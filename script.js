@@ -1,8 +1,8 @@
 const holes = document.querySelectorAll('.hole');
-console.log(holes);
+// console.log(holes);
 const scoreBoard = document.querySelector('.score');
 const moles = document.querySelector('.bara');
-const timer = document.querySelector('.timer');
+const countdownBoard = document.querySelector('.timer');
 const startButton = document.querySelector('startButton')
 
 let lastHole;
@@ -36,3 +36,26 @@ function popOut() {
 }
 
 popOut();
+
+function startGame() {
+  countdown = timeLimit/1000;
+  scoreBoard.textContext = 0;
+  scoreBoard.style.display = 'block';
+  countdownBoard.textContent = countdown;
+  timeExpired = false;
+  score = 0;
+  popOut();
+  setTimeout(function(){
+    timeExpired = true;
+  }, timelimit);
+
+  let startCountdown = setInterval(function(){
+    countdown -= 1;
+    countdownBoard.textContent = countdown
+    if (countdown < 0) {
+      countdown = 0;
+      clearInterval(startCountdown);
+      countdownBoard.textContent = "Time's up!"
+    }
+  }, 1000);
+}
