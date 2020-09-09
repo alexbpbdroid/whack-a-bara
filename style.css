@@ -100,3 +100,11 @@ button {
 .hole.show .bara {
   top: 0;
 }
+
+.bara.small {
+  background-size: 60%;
+}
+
+.bara-large {
+  background-size: 80%;
+}
