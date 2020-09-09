@@ -1,9 +1,9 @@
 const holes = document.querySelectorAll('.hole');
 // console.log(holes);
 const scoreBoard = document.querySelector('.score');
-const moles = document.querySelector('.bara');
-const countdownBoard = document.querySelector('.timer');
-const startButton = document.querySelector('startButton')
+const baras = document.querySelectorAll('.bara');
+const countdownBoard = document.querySelector('.countdown');
+const startButton = document.querySelector('.startButton')
 
 let lastHole;
 let timeExpired = false;
@@ -59,3 +59,19 @@ function startGame() {
     }
   }, 1000);
 }
+
+startButton.addEventListener('click', startGame);
+
+function hit(e) {
+  score++;
+  this.style.background = 'blue';
+  this.style.pointerEvents = 'none';
+  setTimeout(() => {
+    this.style.background = 'red';
+    this.style.pointerEvents = 'all';
+  }, 800);
+  scoreBoard.textContent = score;
+}
+
+baras.forEach(bara => bara.addEventListener('click', hit));
+
