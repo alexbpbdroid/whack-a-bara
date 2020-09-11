@@ -51,7 +51,7 @@ function startGame() {
 
   let startCountdown = setInterval(function(){
     countdown -= 1;
-    countdownBoard.textContent = countdown
+    countdownBoard.textContent = countdown;
     if (countdown < 0) {
       countdown = 0;
       clearInterval(startCountdown);

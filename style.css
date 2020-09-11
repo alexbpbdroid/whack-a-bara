@@ -14,10 +14,11 @@ body {
   left: 50%;
   border: 2px solid black;
   transform: translate(-50%, -50%);
-  background-color: gray;
+  /* background-color: gray; */
   overflow: hidden;
   width: 800px;
   height: 600px;
+  background-image: url('grass.jpg')
 }
 
 .score {
@@ -57,7 +58,7 @@ button {
 }
 
 .board {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 600px;
   height: 400px;
   margin: 70px auto;
@@ -76,7 +77,7 @@ button {
 .hole:after {
   content: '';
   display: block;
-  background: black;
+  background-image: url('dirt.jpg');
   position: absolute;
   width: 100%;
   height: 70px;
