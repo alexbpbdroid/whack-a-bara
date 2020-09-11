@@ -64,10 +64,10 @@ startButton.addEventListener('click', startGame);
 
 function hit(e) {
   score++;
-  this.style.background = 'blue';
+  // this.style.background = 'blue';
   this.style.pointerEvents = 'none';
   setTimeout(() => {
-    this.style.background = 'red';
+    // this.style.background = 'red';
     this.style.pointerEvents = 'all';
   }, 800);
   scoreBoard.textContent = score;
