@@ -3,7 +3,9 @@ const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
 const baras = document.querySelectorAll('.bara');
 const countdownBoard = document.querySelector('.countdown');
-const startButton = document.querySelector('.startButton')
+const startButton = document.querySelector('.startButton');
+const hitsound = document.querySelector('.hitsound');
+const startsound = document.querySelector('.startsound')
 
 let lastHole;
 let timeExpired = false;
@@ -71,6 +73,7 @@ function hit(e) {
     this.style.pointerEvents = 'all';
   }, 800);
   scoreBoard.textContent = score;
+  hitsound.play();
 }
 
 baras.forEach(bara => bara.addEventListener('click', hit));
