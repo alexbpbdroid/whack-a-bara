@@ -41,7 +41,7 @@ popOut();
 
 function startGame() {
   countdown = timeLimit/1000;
-  scoreBoard.textContext = 0;
+  scoreBoard.textContent = 0;
   scoreBoard.style.display = 'block';
   countdownBoard.textContent = countdown;
   timeExpired = false;
@@ -49,7 +49,7 @@ function startGame() {
   popOut();
   setTimeout(function(){
     timeExpired = true;
-  }, timelimit);
+  }, timeLimit);
 
   let startCountdown = setInterval(function(){
     countdown -= 1;
