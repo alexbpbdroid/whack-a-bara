@@ -1,6 +1,6 @@
 const holes = document.querySelectorAll('.hole');
 // console.log(holes);
-const scoreBoard = document.querySelector('.score');
+const scoreBoard = document.querySelector('.score-number');
 const baras = document.querySelectorAll('.bara');
 const countdownBoard = document.querySelector('.countdown');
 const startButton = document.querySelector('.startButton');
