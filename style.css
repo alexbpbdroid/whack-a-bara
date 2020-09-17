@@ -8,7 +8,7 @@ body {
   font-family: 'Press Start 2P';
   background-color: gray;
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 h1 {
@@ -27,25 +27,36 @@ h1 {
   background-image: url('grass.jpg')
 }
 
-.score {
-  font-size: 100px;
-  color: black;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  height: 100px;
-  text-align: center;
-  right: -135px;
-  top: 50px;
+.score-text {
+  color: white;
+  text-shadow:
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+.score-number {
+  color: orange;
+  text-shadow:
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
 }
 
 .countdown {
-    position: absolute;
-    bottom: 70px;
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-    color: black;
+  position: absolute;
+  bottom: 85px;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  text-shadow:
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
 }
 
 button {
@@ -65,7 +76,7 @@ button {
 
 .board {
   width: 600px;
-  height: 400px;
+  height: 350px;
   z-index: 200;
   display: flex;
   flex-wrap: wrap;
@@ -107,7 +118,7 @@ button {
 }
 
 .hole.show .bara {
-  top: 0;
+  top: 0px;
 }
 
 .bara.small {
