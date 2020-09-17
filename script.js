@@ -1,5 +1,4 @@
 const holes = document.querySelectorAll('.hole');
-// console.log(holes);
 const scoreBoard = document.querySelector('.score-number');
 const baras = document.querySelectorAll('.bara');
 const countdownBoard = document.querySelector('.countdown');
@@ -37,8 +36,6 @@ function popOut() {
   }, time);
 }
 
-popOut();
-
 function startGame() {
   countdown = timeLimit/1000;
   scoreBoard.textContent = 0;
@@ -60,16 +57,17 @@ function startGame() {
       countdownBoard.textContent = "Time's up!"
     }
   }, 1000);
+  startsound.play();
 }
 
 startButton.addEventListener('click', startGame);
 
 function hit(e) {
   score++;
-  // this.style.background = 'blue';
+  this.style.backgroundImage = 'url("starcoin.png")';
   this.style.pointerEvents = 'none';
   setTimeout(() => {
-    // this.style.background = 'red';
+    this.style.backgroundImage = 'url("capybara.png")';
     this.style.pointerEvents = 'all';
   }, 800);
   scoreBoard.textContent = score;
