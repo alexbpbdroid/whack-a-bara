@@ -54,7 +54,7 @@ function startGame() {
     if (countdown < 0) {
       countdown = 0;
       clearInterval(startCountdown);
-      countdownBoard.textContent = "Time's up!"
+      countdownBoard.textContent = "Good work, soldier!"
     }
   }, 1000);
   startsound.play();
