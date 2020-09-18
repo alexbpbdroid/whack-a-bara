@@ -38,3 +38,7 @@ Players can use their mallet to hit the capybaras that appear on screen and incr
     hitsound.play();
   }
 ```
+## Bonus features (future implementation)
+
+  * Difficulty settings
+  * Scoring leaderboards
