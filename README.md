@@ -19,7 +19,7 @@ Javascript, HTML, CSS
 
 Capybaras randomly pop out of their holes for varying amounts of time and players are able to hit as many as they can within the time limit.
 
-![filter](https://github.com/alexbpbdroid/whack-a-bara/blob/master/capytest.gif?raw=true)
+![filter](https://github.com/alexbpbdroid/whack-a-bara/blob/master/capygif.gif?raw=true)
 
 ### Hit capybara in order to gain coins, increasing score
 
