@@ -7,11 +7,10 @@
 body {
   font-family: 'Press Start 2P';
   background-color: rgb(37, 37, 37);
-  width: 100vh;
-  height: 100vh;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 h1 {
@@ -42,6 +41,7 @@ h1 {
   1px -1px 0 #000,
   -1px 1px 0 #000,
   1px 1px 0 #000;
+  margin-left: 15px;
 }
 
 .countdown {
@@ -151,6 +151,25 @@ button {
 
 .description {
   color: white;
-  width: 360px;
+  width: 608px;
   line-height: 2;
+  margin-left: 90px;
+  margin-bottom: 20px;
+}
+
+.links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  align-items: center;
+}
+
+#footer-git, #footer-linkedin, #footer-personal {
+  font-size: 30px;
+  color: #959595;
+}
+#footer-git:hover, #footer-linkedin:hover, #footer-personal:hover {
+  color: white;
+  cursor: pointer;
 }
