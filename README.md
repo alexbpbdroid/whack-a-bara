@@ -2,7 +2,7 @@
 
 [Live Site](https://alexbpbdroid.github.io/whack-a-bara/)
 
-![mainpage](https://github.com/alexbpbdroid/whack-a-bara/blob/master/bara-title.png)
+![mainpage](https://github.com/alexbpbdroid/whack-a-bara/blob/master/screenshot.png)
 
 ## About
 
