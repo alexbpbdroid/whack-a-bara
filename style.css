@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Press Start 2P';
-  background-color: gray;
+  background-color: rgb(37, 37, 37);
   width: 100%;
   height: 100%;
 }
@@ -82,6 +82,7 @@ button {
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
+  cursor: url('../mallet.png'), auto;
 }
 
 .hole {
@@ -114,7 +115,7 @@ button {
   background-position: center;
   background-size: 80%;
   z-index: 10;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .hole.show .bara {
@@ -136,6 +137,10 @@ button {
   background-color: darkgray;
   border: 2px solid black;
   width: 20%
+}
+
+.startButton:hover {
+  background-color: lightgray;
 }
 
 .bara-title {
